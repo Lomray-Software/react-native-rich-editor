@@ -279,7 +279,7 @@ function createHTML(options = {}) {
             heading2: {
                 state: function() { return queryCommandValue(formatBlock) === 'h2'; },
                 result: function() {
-                    if (Actions.heading1.state()) {
+                    if (Actions.heading2.state()) {
                         return exec(formatBlock, '<div>');
                     }
                     return exec(formatBlock, '<h2>');
@@ -288,7 +288,7 @@ function createHTML(options = {}) {
             heading3: {
                 state: function() { return queryCommandValue(formatBlock) === 'h3'; },
                 result: function() {
-                    if (Actions.heading1.state()) {
+                    if (Actions.heading3.state()) {
                         return exec(formatBlock, '<div>');
                     }
                     return exec(formatBlock, '<h3>');
@@ -297,7 +297,7 @@ function createHTML(options = {}) {
             heading4: {
                 state: function() { return queryCommandValue(formatBlock) === 'h4'; },
                 result: function() {
-                    if (Actions.heading1.state()) {
+                    if (Actions.heading4.state()) {
                         return exec(formatBlock, '<div>');
                     }
                     return exec(formatBlock, '<h4>');
@@ -306,7 +306,7 @@ function createHTML(options = {}) {
             heading5: {
                 state: function() { return queryCommandValue(formatBlock) === 'h5'; },
                 result: function() {
-                    if (Actions.heading1.state()) {
+                    if (Actions.heading5.state()) {
                         return exec(formatBlock, '<div>');
                     }
                     return exec(formatBlock, '<h5>');
@@ -315,7 +315,7 @@ function createHTML(options = {}) {
             heading6: {
                 state: function() { return queryCommandValue(formatBlock) === 'h6'; },
                 result: function() {
-                    if (Actions.heading1.state()) {
+                    if (Actions.heading6.state()) {
                         return exec(formatBlock, '<div>');
                     }
                     return exec(formatBlock, '<h6>');
